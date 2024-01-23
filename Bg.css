@@ -1,0 +1,146 @@
+@font-face{
+    src:url(San-Francisco-Pro-Fonts-master/SF-Pro-Display-Regular.otf);
+    font-family:SF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(34, 93, 0, 0.8));*/
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    background-color: transparent;
+    color: white;
+    width: 420px;
+    padding:30px 40px ;
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: rgb(0, 255, 0);
+}
+
+.content{
+    text-align: top;
+
+}
+.content{
+    
+    font: size 35   0px;   
+    color: rgb(0, 215, 0);
+    font-family:SF;
+    font-weight: 800;
+}
+.box{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.box input[type="text"]{    /*This is for the username box*/
+   width: 100%;             /*This will be required if needed*/
+    border: 4px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    outline: none ;
+    padding: 10px;
+    padding-right: 20px;
+    font-family: SF;
+    background-color: aliceblue;
+    background: rgba(255, 255, 255, 1);
+}
+.box input::placeholder{
+    color: #000000;
+    background: #fff ;
+} 
+.wrapper .remeber-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px ;
+}
+.remeber-forget{
+    accent-color: rgb(0, 180, 0);
+    margin-right: 3px;
+    color:  rgb(0, 255, 0);
+}
+.label:hover{
+    cursor: pointer;
+}
+.remeber-forget a{
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+.remeber-forget a:hover{
+    text-decoration: underline;
+
+}
+.register-link{
+    size: 14.5px;
+    accent-color: #fff;
+    margin-top:20px;
+}
+.register-link a{
+    color:  rgb(0, 255, 0);
+    text-decoration: none;
+}
+.register-link a:hover{
+    text-decoration: underline;
+
+}
+.wrapper .btn{
+    width: 100%;
+    height: 40px;
+    padding: .5dvh;
+    color: black;      
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+.wrapper .btn:hover{
+    cursor: pointer;
+}
+.bgvid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .bgvid{
+        width: 100%;
+        height: auto;
+
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .bgvid{
+        width: auto;
+        height: 100%;
+    }
+}
+.p{
+    font-family: San;
+    text-align: left ;
+}
+
+.register-link{
+    color: aliceblue;
+}
